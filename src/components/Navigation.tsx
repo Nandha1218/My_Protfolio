@@ -20,11 +20,11 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
+          <div className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-yellow-700 bg-clip-text text-transparent">
             Manoj Kumar M
           </div>
           <div className="hidden md:flex space-x-8">
@@ -32,7 +32,7 @@ const Navigation = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-gray-700 hover:text-violet-600 transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-amber-600 transition-colors duration-200 font-medium"
               >
                 {item}
               </button>

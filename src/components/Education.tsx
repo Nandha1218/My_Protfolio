@@ -39,8 +39,8 @@ const Education = () => {
   return (
     <section id="education" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16">
-          <span className="bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+          <span className="bg-gradient-to-r from-amber-600 to-yellow-700 bg-clip-text text-transparent">
             Education & Courses
           </span>
         </h2>
@@ -48,8 +48,8 @@ const Education = () => {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
           {/* Education */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-8 flex items-center">
-              <GraduationCap className="mr-3 text-violet-600" size={28} />
+            <h3 className="text-2xl font-bold text-gray-800 mb-8 flex items-center justify-center lg:justify-start">
+              <GraduationCap className="mr-3 text-amber-600" size={28} />
               Education
             </h3>
             
@@ -57,10 +57,10 @@ const Education = () => {
               {education.map((edu, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-violet-50 to-purple-50 rounded-xl p-6 shadow-lg"
+                  className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-6 shadow-lg"
                 >
                   <h4 className="text-lg font-bold text-gray-800 mb-2">{edu.degree}</h4>
-                  <p className="text-violet-600 font-semibold mb-1">{edu.institution}</p>
+                  <p className="text-amber-600 font-semibold mb-1">{edu.institution}</p>
                   <div className="flex justify-between items-center text-sm text-gray-600">
                     <span>{edu.period}</span>
                     <span className="font-semibold">{edu.grade}</span>
@@ -72,8 +72,8 @@ const Education = () => {
           
           {/* Courses */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-8 flex items-center">
-              <Award className="mr-3 text-violet-600" size={28} />
+            <h3 className="text-2xl font-bold text-gray-800 mb-8 flex items-center justify-center lg:justify-start">
+              <Award className="mr-3 text-amber-600" size={28} />
               Courses
             </h3>
             
@@ -81,7 +81,7 @@ const Education = () => {
               {courses.map((course, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-violet-50 to-purple-50 rounded-xl p-6 shadow-lg"
+                  className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-6 shadow-lg"
                 >
                   <h4 className="text-lg font-bold text-gray-800 mb-2">{course.title}</h4>
                   <p className="text-gray-700 mb-3">{course.description}</p>
