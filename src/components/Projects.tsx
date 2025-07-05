@@ -20,10 +20,10 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+    <section id="projects" className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
             Featured Projects
           </span>
         </h2>
@@ -41,7 +41,7 @@ const Projects = () => {
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="px-3 py-1 bg-gradient-to-r from-blue-100 to-teal-100 text-blue-700 rounded-full text-sm font-medium"
+                    className="px-3 py-1 bg-gradient-to-r from-blue-100 to-cyan-100 text-blue-600 rounded-full text-sm font-medium"
                   >
                     {tech}
                   </span>
@@ -51,14 +51,14 @@ const Projects = () => {
               <div className="flex space-x-4">
                 <a
                   href={project.github}
-                  className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-teal-600 text-white rounded-lg hover:shadow-lg transition-all duration-200"
+                  className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-400 to-cyan-500 text-white rounded-lg hover:shadow-lg transition-all duration-200"
                 >
                   <Github size={16} className="mr-2" />
                   Code
                 </a>
                 <a
                   href={project.demo}
-                  className="flex items-center px-4 py-2 border border-blue-500 text-blue-600 rounded-lg hover:bg-blue-50 transition-all duration-200"
+                  className="flex items-center px-4 py-2 border border-blue-400 text-blue-500 rounded-lg hover:bg-blue-50 transition-all duration-200"
                 >
                   <ExternalLink size={16} className="mr-2" />
                   Demo

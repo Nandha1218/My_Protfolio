@@ -26,10 +26,10 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+    <section id="skills" className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
             Technical Skills
           </span>
         </h2>
@@ -41,7 +41,7 @@ const Skills = () => {
               className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
               <div className="flex items-center mb-4">
-                <div className="p-2 bg-gradient-to-r from-blue-500 to-teal-600 text-white rounded-lg mr-3">
+                <div className="p-2 bg-gradient-to-r from-blue-400 to-cyan-500 text-white rounded-lg mr-3">
                   {category.icon}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-800">{category.title}</h3>
