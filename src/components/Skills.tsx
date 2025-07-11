@@ -21,7 +21,7 @@ const Skills = () => {
     {
       icon: <Cpu size={24} />,
       title: "AI Tools",
-      skills: ["Cursor", "GPT", "Claude", "Copilot Agent", "LovableAI"]
+      skills: ["Cursor", "GPT", "Claude", "Copilot Agent"]
     },
     {
       icon: <BarChart3 size={24} />,

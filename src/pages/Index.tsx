@@ -7,6 +7,7 @@ import Projects from "../components/Projects";
 import Education from "../components/Education";
 import Contact from "../components/Contact";
 import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <Projects />
       <Education />
       <Contact />
+      <Footer />
     </div>
   );
 };

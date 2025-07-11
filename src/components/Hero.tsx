@@ -25,7 +25,7 @@ const Hero = () => {
             </span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-700 mb-8 font-light">
-            AI & Data Science Student | Machine Learning Developer
+            AI & Data Science Student
           </h2>
           <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
             Currently pursuing B.Tech in Artificial Intelligence and Data Science at Ramco Institute of Technology. 
