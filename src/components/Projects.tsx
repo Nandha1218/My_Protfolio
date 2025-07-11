@@ -4,26 +4,40 @@ import { Github, ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Fever Variant Prediction Model",
-      description: "Created a model using Linear Algorithm to predict fever types using Flask-based ML model that gives 80% above accuracy with health symptom data.",
-      technologies: ["Python", "Flask", "Machine Learning", "Linear Algorithm"],
+      title: "WhatsApp Group Chat Analyzer",
+      description: "Trained and fine-tuned ML model using K-means algorithm to analyze group chat patterns. Built structured frontend with user-friendly UI and modernized AI tools integration.",
+      technologies: ["Python", "K-means Algorithm", "Frontend Development", "AI Tools"],
       github: "#",
       demo: "#"
     },
     {
-      title: "Chat Analyser ML Model",
-      description: "Trained and fine-tuned an Random Forest Algorithm model to predict chat among WhatsApp group and give structured chat analysis.",
-      technologies: ["Python", "Flask", "Random Forest", "NLP"],
+      title: "Photo Search Model",
+      description: "Idea-based prototype for intelligent photo search and categorization using machine learning algorithms and computer vision techniques.",
+      technologies: ["Python", "Computer Vision", "Machine Learning", "Prototype Development"],
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Voice Cloning System",
+      description: "Idea-based prototype for voice synthesis and cloning technology using advanced AI models and deep learning techniques.",
+      technologies: ["Python", "Deep Learning", "Audio Processing", "AI Models"],
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Resume Ranker",
+      description: "Currently in progress - Building an HR analytics tool to analyze and rank resumes among candidates using NLP and machine learning algorithms.",
+      technologies: ["Python", "NLP", "Machine Learning", "HR Analytics"],
       github: "#",
       demo: "#"
     }
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+    <section id="projects" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-transparent">
             Featured Projects
           </span>
         </h2>
@@ -41,7 +55,7 @@ const Projects = () => {
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="px-3 py-1 bg-gradient-to-r from-blue-100 to-cyan-100 text-blue-600 rounded-full text-sm font-medium"
+                    className="px-3 py-1 bg-gradient-to-r from-blue-100 to-teal-100 text-blue-600 rounded-full text-sm font-medium"
                   >
                     {tech}
                   </span>
@@ -51,7 +65,7 @@ const Projects = () => {
               <div className="flex space-x-4">
                 <a
                   href={project.github}
-                  className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-400 to-cyan-500 text-white rounded-lg hover:shadow-lg transition-all duration-200"
+                  className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-400 to-teal-500 text-white rounded-lg hover:shadow-lg transition-all duration-200"
                 >
                   <Github size={16} className="mr-2" />
                   Code

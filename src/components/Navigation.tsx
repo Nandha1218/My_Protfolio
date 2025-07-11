@@ -24,8 +24,8 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
-            Manoj Kumar M
+          <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-transparent">
+            Nandha M
           </div>
           <div className="hidden md:flex space-x-8">
             {['About', 'Skills', 'Experience', 'Projects', 'Education', 'Contact'].map((item) => (
