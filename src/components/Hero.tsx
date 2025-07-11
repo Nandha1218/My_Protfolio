@@ -8,80 +8,78 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50/80 via-white to-teal-50/80">
-      {/* Modern floating background elements with smooth animations */}
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50/50 via-white to-teal-50/50">
+      {/* Subtle background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-200/20 to-teal-200/15 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-teal-200/20 to-blue-200/10 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-blue-100/15 to-teal-100/15 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-float" style={{ animationDelay: '1s' }}></div>
-        
-        {/* Smooth floating dots without flickering */}
-        <div className="absolute top-20 left-20 w-3 h-3 bg-blue-400/30 rounded-full animate-float" style={{ animationDelay: '0.5s' }}></div>
-        <div className="absolute bottom-32 right-32 w-2 h-2 bg-teal-400/30 rounded-full animate-float" style={{ animationDelay: '1.5s' }}></div>
-        <div className="absolute top-1/3 right-20 w-2 h-2 bg-blue-300/40 rounded-full animate-float" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-200/10 to-teal-200/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-teal-200/10 to-blue-200/10 rounded-full mix-blend-multiply filter blur-3xl opacity-60"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-blue-100/10 to-teal-100/10 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          {/* Main heading with smooth fade-in animation */}
-          <div className="mb-8 animate-fade-in">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
-              <span className="bg-gradient-to-r from-blue-600 via-teal-500 to-blue-500 bg-clip-text text-transparent animate-gradient bg-300% hover:scale-105 transition-transform duration-500">
+          {/* Main heading - clean and simple */}
+          <div className="mb-8">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+              <span className="bg-gradient-to-r from-blue-600 via-teal-500 to-blue-500 bg-clip-text text-transparent">
                 Nandha M
               </span>
             </h1>
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 font-light mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-600 font-light mb-8 leading-relaxed">
               AI & Data Science Student | Machine Learning Developer
             </h2>
           </div>
           
-          {/* Description with staggered animation */}
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed px-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            Currently pursuing B.Tech in Artificial Intelligence and Data Science at Ramco Institute of Technology. 
-            Passionate about developing AI-driven solutions and implementing complex algorithms with real-world applications.
-          </p>
+          {/* Description with perfect spacing */}
+          <div className="mb-12">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
+              Currently pursuing B.Tech in Artificial Intelligence and Data Science at Ramco Institute of Technology. 
+              <br className="hidden sm:block" />
+              Passionate about developing AI-driven solutions and implementing complex algorithms with real-world applications.
+            </p>
+          </div>
           
-          {/* Single action button with smooth hover effects */}
-          <div className="flex justify-center items-center mb-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          {/* Call to action button */}
+          <div className="flex justify-center items-center mb-16">
             <button 
               onClick={scrollToAbout}
-              className="group px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-xl font-semibold hover:shadow-xl hover:scale-105 transition-all duration-500 flex items-center justify-center gap-2 relative overflow-hidden"
+              className="group px-10 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white text-lg font-semibold rounded-2xl hover:shadow-2xl hover:scale-105 transition-all duration-300 relative overflow-hidden"
             >
               <span className="relative z-10">Explore My Work</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
           </div>
           
-          {/* Social links with smooth animations */}
-          <div className="flex justify-center space-x-6 mb-12 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+          {/* Social links with perfect alignment */}
+          <div className="flex justify-center items-center space-x-8 mb-16">
             <a 
               href="mailto:nandhamarikannan2004@gmail.com" 
-              className="group p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-500"
+              className="group p-5 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 border border-blue-100/50"
             >
-              <Mail size={24} className="text-blue-500 group-hover:text-teal-500 transition-colors duration-300 group-hover:rotate-12" />
+              <Mail size={28} className="text-blue-500 group-hover:text-teal-500 transition-colors duration-300" />
             </a>
             <a 
               href="https://www.linkedin.com/in/nandha-m-38681b250" 
-              className="group p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-500"
+              className="group p-5 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 border border-blue-100/50"
             >
-              <Linkedin size={24} className="text-blue-500 group-hover:text-teal-500 transition-colors duration-300 group-hover:rotate-12" />
+              <Linkedin size={28} className="text-blue-500 group-hover:text-teal-500 transition-colors duration-300" />
             </a>
             <a 
               href="https://github.com/Nandha1218" 
-              className="group p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-500"
+              className="group p-5 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 border border-blue-100/50"
             >
-              <Github size={24} className="text-blue-500 group-hover:text-teal-500 transition-colors duration-300 group-hover:rotate-12" />
+              <Github size={28} className="text-blue-500 group-hover:text-teal-500 transition-colors duration-300" />
             </a>
           </div>
           
-          {/* Smooth scroll indicator with gentle float animation */}
-          <div className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          {/* Simple scroll indicator */}
+          <div className="flex justify-center">
             <button
               onClick={scrollToAbout}
-              className="p-3 text-blue-500 hover:text-teal-500 transition-colors duration-500 animate-float"
+              className="p-4 text-blue-500 hover:text-teal-500 transition-colors duration-300"
             >
               <div className="w-6 h-10 border-2 border-current rounded-full flex justify-center relative">
-                <div className="w-1 h-3 bg-current rounded-full mt-2 animate-bounce"></div>
+                <div className="w-1 h-3 bg-current rounded-full mt-2"></div>
               </div>
             </button>
           </div>
