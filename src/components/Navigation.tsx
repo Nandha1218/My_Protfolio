@@ -1,4 +1,4 @@
-
+// ...existing code...
 import { useState, useEffect } from 'react';
 
 const Navigation = () => {
