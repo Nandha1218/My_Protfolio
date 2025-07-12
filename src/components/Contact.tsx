@@ -1,5 +1,6 @@
 
 import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
+import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
@@ -19,21 +20,12 @@ const Contact = () => {
             </p>
           </div>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <a
-              href="mailto:nandhamarikannan2004@gmail.com"
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center"
-            >
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Mail className="text-white" size={24} />
-              </div>
-              <h3 className="font-semibold text-gray-800 mb-2">Email</h3>
-              <p className="text-sm text-gray-600 break-words">nandhamarikannan2004@gmail.com</p>
-            </a>
+          <div className="flex justify-center gap-6 items-stretch mb-8">
+            {/* ...existing code... */}
             
             <a
               href="tel:+919790454161"
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center"
+              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center flex flex-col justify-between min-h-[260px]"
             >
               <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone className="text-white" size={24} />
@@ -44,7 +36,7 @@ const Contact = () => {
             
             <a
               href="https://www.linkedin.com/in/nandha-m-38681b250"
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center"
+              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center flex flex-col justify-between min-h-[260px]"
             >
               <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Linkedin className="text-white" size={24} />
@@ -55,7 +47,7 @@ const Contact = () => {
             
             <a
               href="https://github.com/Nandha1218"
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center"
+              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center flex flex-col justify-between min-h-[260px]"
             >
               <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Github className="text-white" size={24} />
@@ -63,6 +55,13 @@ const Contact = () => {
               <h3 className="font-semibold text-gray-800 mb-2">GitHub</h3>
               <p className="text-sm text-gray-600">View my projects</p>
             </a>
+            {/* ...existing code... */}
+          </div>
+          <div className="flex justify-center mt-8">
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center min-w-[220px] min-h-[220px] max-w-[350px] w-full flex flex-col justify-between">
+              <div className="text-xl font-bold mb-4 text-blue-600">Contact Me</div>
+              <ContactForm />
+            </div>
           </div>
           
           <div className="text-center mt-12">

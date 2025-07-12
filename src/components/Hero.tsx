@@ -33,13 +33,13 @@ const Hero = () => {
           </p>
           
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="mailto:nandhamarikannan2004@gmail.com" className="p-3 bg-gradient-to-r from-blue-400 to-teal-500 text-white rounded-full hover:shadow-lg hover:scale-110 transition-all duration-200">
+            <a href="mailto:nandhamarikannan2004@gmail.com" className="p-3 bg-gradient-to-r from-blue-400 to-teal-500 text-white rounded-full hover:shadow-lg hover:scale-110 transition-all duration-200" target="_blank" rel="noopener noreferrer">
               <Mail size={24} />
             </a>
-            <a href="https://www.linkedin.com/in/nandha-m-38681b250" className="p-3 bg-gradient-to-r from-blue-400 to-teal-500 text-white rounded-full hover:shadow-lg hover:scale-110 transition-all duration-200">
+            <a href="https://www.linkedin.com/in/nandha-m-38681b250" className="p-3 bg-gradient-to-r from-blue-400 to-teal-500 text-white rounded-full hover:shadow-lg hover:scale-110 transition-all duration-200" target="_blank" rel="noopener noreferrer">
               <Linkedin size={24} />
             </a>
-            <a href="https://github.com/Nandha1218" className="p-3 bg-gradient-to-r from-blue-400 to-teal-500 text-white rounded-full hover:shadow-lg hover:scale-110 transition-all duration-200">
+            <a href="https://github.com/Nandha1218" className="p-3 bg-gradient-to-r from-blue-400 to-teal-500 text-white rounded-full hover:shadow-lg hover:scale-110 transition-all duration-200" target="_blank" rel="noopener noreferrer">
               <Github size={24} />
             </a>
           </div>
