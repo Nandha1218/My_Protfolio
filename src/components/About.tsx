@@ -6,7 +6,7 @@ const About = () => {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             <span className="bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-transparent">
-              About Me
+              Who I Am
             </span>
           </h2>
           
@@ -23,12 +23,12 @@ const About = () => {
               and data modeling skills, preparing me to tackle challenges in the evolving fields of AI and data science.
             </p>
             
-            <div className="grid md:grid-cols-2 gap-8 mt-8">
+            <div className="relative mt-8 pb-2">
               <div className="text-center md:text-left">
                 <h3 className="text-xl font-semibold text-blue-500 mb-3">Location</h3>
                 <p className="text-gray-700">Tamil Nadu, India</p>
               </div>
-              <div className="text-center md:text-left">
+              <div className="absolute bottom-2 right-0 text-right">
                 <h3 className="text-xl font-semibold text-blue-500 mb-3">Phone</h3>
                 <p className="text-gray-700">+91 9790454161</p>
               </div>
