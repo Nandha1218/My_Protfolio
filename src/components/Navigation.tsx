@@ -32,9 +32,10 @@ const Navigation = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium"
+                className="relative text-gray-700 hover:text-blue-500 transition-all duration-300 font-medium group"
               >
                 {item}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-teal-500 transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
           </div>

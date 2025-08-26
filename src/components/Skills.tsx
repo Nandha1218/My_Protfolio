@@ -1,5 +1,6 @@
 
 import { Code, Database, Brain, BarChart3, Wrench, Cpu } from 'lucide-react';
+import { useStaggeredAnimation } from '../hooks/useScrollAnimation';
 
 const Skills = () => {
   const skillCategories = [
@@ -35,20 +36,29 @@ const Skills = () => {
     }
   ];
 
+  const [ref, visibleItems] = useStaggeredAnimation(skillCategories.length, 150);
+
   return (
     <section id="skills" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          <span className="bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-transparent">
+          <span className="gradient-text">
             Technical Skills
           </span>
         </h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              className={`bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift transform ${
+                visibleItems.includes(index) 
+                  ? 'opacity-100 translate-y-0 scale-100' 
+                  : 'opacity-0 translate-y-8 scale-95'
+              }`}
+              style={{
+                transitionDelay: `${index * 150}ms`
+              }}
             >
               <div className="flex items-center mb-4">
                 <div className="p-2 bg-gradient-to-r from-blue-400 to-teal-500 text-white rounded-lg mr-3">
@@ -59,7 +69,17 @@ const Skills = () => {
               
               <ul className="space-y-2">
                 {category.skills.map((skill, skillIndex) => (
-                  <li key={skillIndex} className="text-gray-600 text-sm">
+                  <li 
+                    key={skillIndex} 
+                    className={`text-gray-600 text-sm transition-all duration-300 ${
+                      visibleItems.includes(index) 
+                        ? 'opacity-100 translate-x-0' 
+                        : 'opacity-0 translate-x-4'
+                    }`}
+                    style={{
+                      transitionDelay: `${(index * 150) + (skillIndex * 100)}ms`
+                    }}
+                  >
                     • {skill}
                   </li>
                 ))}
